@@ -35,5 +35,5 @@ if (!defined('ABSPATH')) {
     $path = str_replace($root, '', __DIR__);
     $url = site_url($path . '/404.html');
     $content = file_get_contents($url, false, stream_context_create(array('http' => array('ignore_errors' => true))));
-    die (str_replace($path . '/404.html', $_SERVER['PHP_SELF'], $content));
+    die (str_replace(parse_url($url, PHP_URL_PATH), $_SERVER['PHP_SELF'], $content));
 }
