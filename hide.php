@@ -29,6 +29,9 @@
  */
 
 if (!defined('ABSPATH')) {
+    if (strpos(__FILE__, 'wp-content/plugins/' . basename(__DIR__) . '/hide.php') === false) {
+        die;
+    }
     header('HTTP/1.0 404 Not Found');
     $root = realpath(__DIR__ . '/../../../');
     include_once $root . '/wp-config.php';
