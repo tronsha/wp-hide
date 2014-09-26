@@ -1,0 +1,2 @@
+wp-silence-is-golden
+====================
