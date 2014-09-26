@@ -1,2 +1,2 @@
-wp-silence-is-golden
-====================
+WordPress Silence Is Golden
+===========================
