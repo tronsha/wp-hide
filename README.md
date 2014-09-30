@@ -8,8 +8,5 @@ Copy the file *hide.php* into the WordPress root directory.
 Add the following code into the file, to hide the file:
 
 ```php
-if (!defined('ABSPATH')) {
-    include_once explode('wp-content', __DIR__)[0] . '/hide.php';
-    die;
-}
+include_once explode('wp-content', __DIR__)[0] . '/hide.php';
 ```
