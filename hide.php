@@ -29,14 +29,9 @@
  */
 
 if (!defined('ABSPATH')) {
-    if (strpos(__FILE__, 'wp-content/plugins/' . basename(__DIR__) . '/hide.php') === false) {
-        die;
-    }
     header('HTTP/1.0 404 Not Found');
-    $root = realpath(__DIR__ . '/../../../');
-    include_once $root . '/wp-config.php';
-    $path = str_replace($root, '', __DIR__);
-    $url = site_url($path . '/404.html');
+    require_once __DIR__ . '/wp-config.php';
+    $url = site_url('/404.html');
     $content = file_get_contents($url, false, stream_context_create(array('http' => array('ignore_errors' => true))));
     die (str_replace(parse_url($url, PHP_URL_PATH), $_SERVER['PHP_SELF'], $content));
 }
