@@ -1,8 +1,9 @@
 <?php
 /**
- * WordPress Silence Is Golden
+ * WordPress Hide
+ * Silence Is Golden
  *
- * @link https://github.com/tronsha/wp-silence-is-golden
+ * @link https://github.com/tronsha/wp-hide
  *
  * The MIT License (MIT)
  *
