@@ -1,12 +1,14 @@
-WordPress Silence Is Golden
-===========================
+WordPress Hide
+==============
+
+*Silence Is Golden*
 
 ![](http://instacod.es/file/94822)
 
-Copy the file *hide.php* into the WordPress root directory.
+Copy the file **wp-hide.php** into the WordPress root directory.
 
 Add the following code into the file, to hide the file:
 
 ```php
-defined('ABSPATH') or (@include_once explode('wp-content', __DIR__)[0] . '/hide.php') or die;
+defined('ABSPATH') or (@include_once explode('wp-content', __DIR__)[0] . '/wp-hide.php') or die;
 ```
