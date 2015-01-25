@@ -1,7 +1,7 @@
 WordPress Hide
 ==============
 
-:ghost: *Silence Is Golden*
+*Silence Is Golden* :ghost:
 
 Copy the file **wp-hide.php** into the WordPress root directory.
 
